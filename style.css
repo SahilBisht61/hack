@@ -8,7 +8,12 @@ body {
   font-family: "nunito", sans-serif;
   background-color:whitesmoke;
   background: linear-gradient(120deg, #1e3b728f 0%, #2a5298 50%, #2980b9 100%);
+  
  
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 span{
   color: #121213;
