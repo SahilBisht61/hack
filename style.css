@@ -7,6 +7,15 @@
 body {
   font-family: "nunito", sans-serif;
   background-color:whitesmoke;
+  background: linear-gradient(120deg, #1e3b728f 0%, #2a5298 50%, #2980b9 100%);
+ 
+}
+span{
+  color: #121213;
+}
+
+.pp{
+  color: #fafafd;
 }
 
 .logo-container {
@@ -28,7 +37,7 @@ ul {
 }
 
 a {
-  color: black;
+  color: rgb(33, 30, 30);
 }
 
 a:hover {
@@ -63,8 +72,8 @@ nav {
 .courses ul {
   position: absolute;
   top: 150%;
-  background: rgba(255, 255, 255, 1);
-  border: 1.5px solid rgba(233, 234, 235, 1);
+  background: rgb(251, 246, 246);
+  border: 1.5px solid rgb(236, 238, 239);
   box-shadow: 0px 4px 10px 0px rgba(30, 27, 27, 0.1);
   width: 245px;
   font-size: 14px;
@@ -211,3 +220,21 @@ a {
 .courses ul{
   left: -24px;
 }
+        /* Cover Photo Styles */
+        .cover-photo {
+          width: 100%;
+          height: 400px;
+          background: url('./cover-photo.jpg') no-repeat center center;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: rgb(247, 240, 240);
+          font-size: 2rem;
+          font-weight: bold;
+          padding: 20px;
+      }
+
+
+      
