@@ -240,6 +240,20 @@ a {
           font-weight: bold;
           padding: 20px;
       }
+            /* Add CSS for the typing animation if needed */
+            .typing-text {
+              font-size: 2rem;
+              font-weight: bold;
+              white-space: nowrap;
+              overflow: hidden;
+              border-right: .15em solid orange; /* Cursor */
+              animation: blink-caret .75s step-end infinite;
+            }
+      
+            @keyframes blink-caret {
+              from, to { border-color: transparent }
+              50% { border-color: orange; }
+            }
 
 
       
