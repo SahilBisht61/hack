@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>About Us - Student Project Management & Showcase Platform</title>
     
-    <style>
+     <!-- <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -37,39 +37,135 @@
         span{
             color: rgba(25, 20, 20, 0.725);
         }
-    </style>
+    </style>  -->
+    <style>
+      /* Body and Container Styling */
+      body {
+          font-family: 'Nunito', sans-serif;
+          line-height: 1.7;
+          padding: 20px;
+          background-color: #f4f4f4;
+          color: #333;
+          margin: 0;
+      }
+  
+      .container {
+          max-width: 800px;
+          margin-top: 87px;
+          background-color: #ffffff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          transform: scale(0.9);
+          opacity: 0;
+          animation: fadeInScale 1s forwards;
+      }
+  
+      /* Heading Styles */
+      h1, h2 {
+          text-align: center;
+          color: #333;
+          margin-bottom: 20px;
+          font-weight: bold;
+          animation: fadeInUp 1.2s forwards;
+          opacity: 0;
+      }
+  
+      h1 {
+          font-size: 2.5rem;
+          animation-delay: 0.3s;
+      }
+  
+      h2 {
+          font-size: 2rem;
+          animation-delay: 0.6s;
+          color: #0b0b0b; /* Subtle blue for subheadings */
+      }
+  
+      /* Paragraph Styles */
+      p {
+          margin-bottom: 15px;
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: #555;
+          opacity: 0;
+          transform: translateY(20px);
+          animation: fadeInUp 1.5s forwards;
+      }
+  
+      p:nth-of-type(1) {
+          animation-delay: 0.9s;
+      }
+  
+      /* List Styles */
+      .anime{
+          margin-bottom: 600px;
+          padding-left: 20px;
+          opacity: 0;
+          animation: fadeInUp 1.8s forwards;
+      }
+  
+      .anime {
+          margin-bottom: 10px;
+          font-size: 1.1rem;
+          color: #666;
+          padding: 8px;
+          background-color: #f8f9fa;
+          border-radius: 5px;
+          transition: transform 0.3s, box-shadow 0.3s;
+      }
+  
+      .anime:hover {
+          transform: translateX(5px);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          background-color: #e9ecef;
+          cursor: pointer;
+      }
+      header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(120deg, #1e3b728f 0%, #2a5298 50%, #2980b9 100%); /* Optional: Adjust as needed */
+        z-index: 1000; /* Ensure it stays above other content */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for better visibility */
+    }
+    
+  
+      span {
+          color: #444;
+      }
+
+      
+  
+      /* Animations */
+      @keyframes fadeInUp {
+          from {
+              opacity: 0;
+              transform: translateY(30px);
+          }
+          to {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+  
+      @keyframes fadeInScale {
+          from {
+              opacity: 0;
+              transform: scale(0.9);
+          }
+          to {
+              opacity: 1;
+              transform: scale(1);
+          }
+      }
+  </style>
+ 
+  
 </head>
 <body>
-    <!-- <div class="Hamburger-menu" >
-        <input type="checkbox" id="Hamburger-checkbox" />
-        <label for="Hamburger-checkbox">
-          <img src="./hamburger.svg" alt="Hamburger"
-        /></label>
-      </div>
-      <div class="nav-user-container" >
-        <nav>
-          <ul>
-            <li><a href="./home.html"><b>Home</b></a></li>
-            <li class="courses">
-              <span><b>Project</b></span> <img src="./dropdown.svg" alt="dropdown" />
-              <ul>
-                <li>
-                  <a href="./project list.html"><b>Project list</b></a>
-                </li>
-                <li>
-                  <a href="./project track.html"><b>Project track</b></a>
-                  </li
-                </li>
-              </ul>
-            </li>
-            <li><a href="./About.html"><b>About</b></a></li>
-            <li><a href="./contact.html"><b>Contact</b></a></li>
-            <li><a href="./upload.html"><b>Upload Project</b></a></li>
 
-          </ul>
-        </nav>
-      
-      </div> -->
       <header>
         <div>
           <div class="logo-container">
@@ -123,7 +219,7 @@
         <p><span>Our goal is to foster creativity, innovation, and teamwork by offering a platform where students can collaborate on projects, track their progress, and showcase their work to a wider audience.</span></p>
 
         <h2>Key Features</h2>
-        <ul>
+        <ul class="anime">
             <li><strong>Project Management:</strong> <span>Students can create and manage their projects, set milestones, and keep track of their progress.</span></li>
             <li><strong>Collaboration:</strong><span> The platform serves as a space where students can collaborate, share resources, and discuss ideas.</span></li>
             <li><strong>Progress Tracking:</strong><span> Track the development of your projects from concept to completion, with clear visibility on each step.</span></li>

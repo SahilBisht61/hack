@@ -6,20 +6,18 @@
 
 body {
   font-family: "nunito", sans-serif;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   background: linear-gradient(120deg, #1e3b728f 0%, #2a5298 50%, #2980b9 100%);
-  
- 
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
-span{
+span {
   color: #121213;
 }
 
-.pp{
+.pp {
   color: #fafafd;
 }
 
@@ -162,7 +160,7 @@ a {
   display: none;
 }
 
-#Hamburger-checkbox{
+#Hamburger-checkbox {
   display: none;
 }
 
@@ -172,10 +170,9 @@ a {
     cursor: pointer;
   }
 
-  header{
+  header {
     padding-inline: 16px;
   }
-
 
   header > div {
     padding-block: 4px;
@@ -217,43 +214,104 @@ a {
     padding-block: 8px;
   }
 
-  .Hamburger-menu:has(input:checked) + .nav-user-container{
+  .Hamburger-menu:has(input:checked) + .nav-user-container {
     display: flex;
   }
 }
 
-.courses ul{
+.courses ul {
   left: -24px;
 }
-        /* Cover Photo Styles */
-        .cover-photo {
-          width: 100%;
-          height: 400px;
-          background: url('./cover-photo.jpg') no-repeat center center;
-          background-size: cover;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          color: rgb(247, 240, 240);
-          font-size: 2rem;
-          font-weight: bold;
-          padding: 20px;
-      }
-            /* Add CSS for the typing animation if needed */
-            .typing-text {
-              font-size: 2rem;
-              font-weight: bold;
-              white-space: nowrap;
-              overflow: hidden;
-              border-right: .15em solid orange; /* Cursor */
-              animation: blink-caret .75s step-end infinite;
-            }
-      
-            @keyframes blink-caret {
-              from, to { border-color: transparent }
-              50% { border-color: orange; }
-            }
+/* Cover Photo Styles */
+.cover-photo {
+  width: 100%;
+  height: 400px;
+  background: url("./cover-photo.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(247, 240, 240);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+/* Add CSS for the typing animation if needed */
+.typing-text { 
+  font-size: 2rem;
+   font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  /* border-right: 0.15em solid black; Visible cursor  */
+   animation: typing 3s steps(30, end) infinite, blink-caret 0.75  step-end infinite;
+ } 
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.testimonials {
+  margin-top: 40px;
+  padding: 20px;
+  /* background-color: #f8f9fa; */
+  background: linear-gradient(120deg, #1e3b728f 0%, #2a5298 50%, #2980b9 100%);
+}
+
+.testimonials h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.testimonial-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+  color: #333;
+}
 
 
-      
+
+
+
